@@ -10,8 +10,9 @@ let other = document.getElementById("other");
 let thermal = document.getElementById("thermal");
 let humidity = document.getElementById("humidity");
 let wind = document.getElementById("wind");
-
+form.addEventListener("submit", onSubmit, true);
 addEventListener("DOMContentLoaded", load);
+
 
 /* función de carga por defecto */
 async function load() {
@@ -78,8 +79,6 @@ async function search(query) {
     ShowMessage("Ingrese una ciudad valida", "invalid");
   }
 }
-
-form.addEventListener("submit", onSubmit, true);
 
 function onSubmit(event) {
   event.preventDefault();
