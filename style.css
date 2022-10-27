@@ -1,0 +1,69 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__img {
+  width: 100px;
+  height: auto;
+}
+
+.temp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.credit{
+  border: none;
+}
+
+.card-img-top{
+  width: 200px;
+  height: auto;
+}
+
+#city{
+  color: #eb6d4a;
+  font-weight: bold;
+}
+#weather{
+  text-transform: uppercase;
+}
+
+.title{
+ color: #eb6d4a;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    height: auto;
+  }
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .other{
+    margin-top: 10px;
+  }
+}
